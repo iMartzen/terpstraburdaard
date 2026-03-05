@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Glasservice- en schildersbedrijf Terpstra | Burdaard</title>
+  <meta name="description" content="Glasservice- en schildersbedrijf Terpstra in Burdaard. Meer dan 20 jaar ervaring in glas- en schilderwerk voor particulier en zakelijk.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="site-logo">
+        <img src="images/logo.jpg" alt="Terpstra Glasservice logo" width="2408" height="595">
+      </a>
+      <nav class="site-nav" aria-label="Hoofdnavigatie">
+        <ul>
+          <li><a href="index.html" class="active">Glasservice</a></li>
+          <li><a href="diensten.html">Diensten</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="vacatures.html">Vacatures</a></li>
+          <li class="nav-cta">
+            <a href="mailto:info@terpstraburdaard.nl?subject=Afspraak maken" class="btn btn--primary">Afspraak maken</a>
+          </li>
+        </ul>
+      </nav>
+      <button class="hamburger" aria-label="Menu openen" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <nav class="mobile-nav" aria-label="Mobiele navigatie">
+      <a href="index.html">Glasservice</a>
+      <a href="diensten.html">Diensten</a>
+      <a href="contact.html">Contact</a>
+      <a href="vacatures.html">Vacatures</a>
+      <a href="mailto:info@terpstraburdaard.nl?subject=Afspraak maken">Afspraak maken</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero__bg" aria-hidden="true"></div>
+    <div class="hero__content">
+      <h1>Glasservice- en schildersbedrijf Terpstra</h1>
+      <p>Vakkundig glas- en schilderwerk in Friesland. Particulier en zakelijk.</p>
+      <div class="hero__actions">
+        <a href="diensten.html" class="btn btn--primary">Bekijk onze diensten</a>
+        <a href="mailto:info@terpstraburdaard.nl?subject=Afspraak maken" class="btn btn--outline-white">Afspraak maken</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- INTRO -->
+  <section class="section">
+    <div class="container">
+      <div class="intro">
+        <div class="intro__text">
+          <h2>Welkom bij Glasservice- en schildersbedrijf Terpstra</h2>
+          <p>Bij Glasservice- en schildersbedrijf Terpstra bent u aan het juiste adres voor al uw glas- en schilderwerk. Jarenlange ervaring ziet u terug in goed en vakkundig werk.</p>
+          <p>Wij verzorgen glas- en schilderwerk voor zowel nieuwbouw als renovatie en onderhoud; voor particulieren en zakelijke opdrachtgevers in heel Friesland.</p>
+          <p>Ons aanbod omvat diverse glassoorten (HR++, isolatieglas, veiligheidsglas), het plaatsen van kozijnen en deuren, binnenhuisschilderwerk, buitenschilderwerk en diverse onderhoudswerkzaamheden.</p>
+        </div>
+        <div class="intro__image">
+          <img src="images/hero.jpg" alt="Glaswerk door Terpstra" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TAGLINE STRIP -->
+  <section class="tagline-strip">
+    <div class="container">
+      <h2>Door de meer dan 20 jaar ervaring en de vele projecten is geen klus ons te gek.</h2>
+      <a href="mailto:info@terpstraburdaard.nl?subject=Afspraak maken" class="btn btn--outline">Neem contact op</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Terpstra Burdaard | It Spyk 11, Burdaard | <a href="tel:0615593385">06 15 59 33 85</a></p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    const hamburger = document.querySelector('.hamburger');
+    const mobileNav = document.querySelector('.mobile-nav');
+
+    hamburger.addEventListener('click', () => {
+      const isOpen = mobileNav.classList.toggle('open');
+      hamburger.classList.toggle('open', isOpen);
+      hamburger.setAttribute('aria-expanded', String(isOpen));
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vacatures | Glasservice- en schildersbedrijf Terpstra</title>
+  <meta name="description" content="Glasservice Terpstra zoekt een ervaren glaszetter. Solliciteer per e-mail of bel 06-15593385.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="site-logo">
+        <img src="images/logo.jpg" alt="Terpstra Glasservice logo" width="2408" height="595">
+      </a>
+      <nav class="site-nav" aria-label="Hoofdnavigatie">
+        <ul>
+          <li><a href="index.html">Glasservice</a></li>
+          <li><a href="diensten.html">Diensten</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="vacatures.html" class="active">Vacatures</a></li>
+          <li class="nav-cta">
+            <a href="mailto:info@terpstraburdaard.nl?subject=Afspraak maken" class="btn btn--primary">Afspraak maken</a>
+          </li>
+        </ul>
+      </nav>
+      <button class="hamburger" aria-label="Menu openen" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <nav class="mobile-nav" aria-label="Mobiele navigatie">
+      <a href="index.html">Glasservice</a>
+      <a href="diensten.html">Diensten</a>
+      <a href="contact.html">Contact</a>
+      <a href="vacatures.html">Vacatures</a>
+      <a href="mailto:info@terpstraburdaard.nl?subject=Afspraak maken">Afspraak maken</a>
+    </nav>
+  </header>
+
+  <!-- PAGE BANNER -->
+  <div class="page-banner">
+    <h1>Glaszetter gezocht!</h1>
+    <p>Kom werken bij Glasservice Terpstra in Burdaard.</p>
+  </div>
+
+  <!-- BUS FOTO -->
+  <div style="max-height: 360px; overflow: hidden;">
+    <img src="images/bus.jpg" alt="Glasservice Terpstra bedrijfsbus" style="width: 100%; height: 360px; object-fit: cover; object-position: center; display: block;">
+  </div>
+
+  <!-- VACATURE INHOUD -->
+  <section class="section">
+    <div class="container">
+      <div class="vacature-card">
+
+        <!-- Meta badges -->
+        <div class="vacature-meta">
+          <span class="badge">&#128188; Fulltime</span>
+          <span class="badge">&#128205; Burdaard</span>
+          <span class="badge">&#128736; Ervaren glaszetter</span>
+        </div>
+
+        <!-- Intro -->
+        <div class="vacature-section">
+          <h2>Over de functie</h2>
+          <p>Glasservice Terpstra is een professioneel bedrijf gespecialiseerd in glaszetwerk, schilderwerk en onderhoud. Wij zijn op zoek naar een ervaren glaszetter die ons team komt versterken.</p>
+        </div>
+
+        <!-- Taken -->
+        <div class="vacature-section">
+          <h2>Wat ga je doen?</h2>
+          <ul>
+            <li><strong>Glaszetten:</strong> Plaatsen en vervangen van glas in diverse situaties</li>
+            <li><strong>Schilderwerk:</strong> Binnen- en buitenschilderwerk bij particulieren en zakelijke opdrachtgevers</li>
+            <li><strong>Onderhoud en reparatie:</strong> Schilder- en glaszetwerk bij onderhouds- en renovatieprojecten</li>
+            <li><strong>Klantenservice:</strong> Direct contact met klanten op locatie</li>
+          </ul>
+        </div>
+
+        <!-- Vereisten -->
+        <div class="vacature-section">
+          <h2>Wat vragen wij?</h2>
+          <ul>
+            <li>Ervaring als glaszetter (ervaring als schilder is een pre)</li>
+            <li>Zelfstandigheid en gevoel voor verantwoordelijkheid</li>
+            <li>Klantgerichte houding en goede communicatieve vaardigheden</li>
+            <li>Rijbewijs B</li>
+            <li>Nauwkeurig werken met oog voor detail</li>
+            <li>Teamplayer die ook zelfstandig kan functioneren</li>
+          </ul>
+        </div>
+
+        <!-- Aanbod -->
+        <div class="vacature-section">
+          <h2>Wat bieden wij?</h2>
+          <ul>
+            <li>Fulltime functie in een professioneel team</li>
+            <li>Marktconform salaris</li>
+            <li>Goede secundaire arbeidsvoorwaarden</li>
+            <li>Afwisselende projecten</li>
+            <li>Prettige werksfeer</li>
+            <li>Mogelijkheid tot vast dienstverband</li>
+          </ul>
+        </div>
+
+        <!-- Solliciteren -->
+        <div class="vacature-apply">
+          <h2>Interesse?</h2>
+          <p>Stuur je motivatie en CV naar Eddy Terpstra via e-mail of bel ons voor meer informatie.</p>
+          <a href="mailto:info@terpstraburdaard.nl?subject=Sollicitatie Glaszetter" class="btn btn--outline-white">Solliciteer per e-mail</a>
+          <p style="margin-top: 20px; font-size: 15px; opacity: 0.85;">Of bel: <a href="tel:0615593385">06 15 59 33 85</a></p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Terpstra Burdaard | It Spyk 11, Burdaard | <a href="tel:0615593385">06 15 59 33
+          85</a></p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    const hamburger = document.querySelector('.hamburger');
+    const mobileNav = document.querySelector('.mobile-nav');
+
+    hamburger.addEventListener('click', () => {
+      const isOpen = mobileNav.classList.toggle('open');
+      hamburger.classList.toggle('open', isOpen);
+      hamburger.setAttribute('aria-expanded', String(isOpen));
+    });
+  </script>
+</body>
+</html>

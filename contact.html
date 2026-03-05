@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Glasservice- en schildersbedrijf Terpstra</title>
+  <meta name="description" content="Neem contact op met Glasservice Terpstra in Burdaard. Bel 06-15593385 of mail naar info@terpstraburdaard.nl.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="site-logo">
+        <img src="images/logo.jpg" alt="Terpstra Glasservice logo" width="2408" height="595">
+      </a>
+      <nav class="site-nav" aria-label="Hoofdnavigatie">
+        <ul>
+          <li><a href="index.html">Glasservice</a></li>
+          <li><a href="diensten.html">Diensten</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+          <li><a href="vacatures.html">Vacatures</a></li>
+          <li class="nav-cta">
+            <a href="mailto:info@terpstraburdaard.nl?subject=Afspraak maken" class="btn btn--primary">Afspraak maken</a>
+          </li>
+        </ul>
+      </nav>
+      <button class="hamburger" aria-label="Menu openen" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <nav class="mobile-nav" aria-label="Mobiele navigatie">
+      <a href="index.html">Glasservice</a>
+      <a href="diensten.html">Diensten</a>
+      <a href="contact.html">Contact</a>
+      <a href="vacatures.html">Vacatures</a>
+      <a href="mailto:info@terpstraburdaard.nl?subject=Afspraak maken">Afspraak maken</a>
+    </nav>
+  </header>
+
+  <!-- PAGE BANNER -->
+  <div class="page-banner">
+    <h1>Contact</h1>
+    <p>Neem gerust contact op. Wij helpen u graag.</p>
+  </div>
+
+  <!-- PAND FOTO -->
+  <div style="max-height: 360px; overflow: hidden;">
+    <img src="images/pand.jpg" alt="Glasservice Terpstra werkplaats in Burdaard" style="width: 100%; height: 360px; object-fit: cover; object-position: center 60%; display: block;">
+  </div>
+
+  <!-- CONTACT SECTIE -->
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- Contactgegevens -->
+        <div class="contact-info">
+          <h2>Glasservice Terpstra</h2>
+
+          <div class="contact-detail">
+            <div class="contact-detail__icon" aria-hidden="true">&#128205;</div>
+            <div class="contact-detail__text">
+              <strong>Adres</strong>
+              It Spyk 11<br>
+              9113 HB Burdaard<br>
+              Friesland
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <div class="contact-detail__icon" aria-hidden="true">&#128222;</div>
+            <div class="contact-detail__text">
+              <strong>Telefoon</strong>
+              <a href="tel:0615593385">06 15 59 33 85</a>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <div class="contact-detail__icon" aria-hidden="true">&#9993;</div>
+            <div class="contact-detail__text">
+              <strong>E-mail</strong>
+              <a href="mailto:info@terpstraburdaard.nl">info@terpstraburdaard.nl</a>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <div class="contact-detail__icon" aria-hidden="true">&#128336;</div>
+            <div class="contact-detail__text">
+              <strong>Bereikbaar</strong>
+              Maandag t/m vrijdag<br>
+              Bel of mail voor een afspraak
+            </div>
+          </div>
+        </div>
+
+        <!-- CTA -->
+        <div class="contact-cta">
+          <h2>Afspraak maken</h2>
+          <p>Wil u een afspraak maken voor een adviesgesprek op locatie of een vrijblijvende offerte? Stuur ons een e-mail en wij nemen zo snel mogelijk contact met u op.</p>
+          <a href="mailto:info@terpstraburdaard.nl?subject=Afspraak maken" class="btn btn--primary">Afspraak maken per e-mail</a>
+          <p style="margin-top: 20px; font-size: 15px;">Of bel direct: <a href="tel:0615593385" style="color: var(--blue); font-weight: 600;">06 15 59 33 85</a></p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Terpstra Burdaard | It Spyk 11, Burdaard | <a href="tel:0615593385">06 15 59 33
+          85</a></p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    const hamburger = document.querySelector('.hamburger');
+    const mobileNav = document.querySelector('.mobile-nav');
+
+    hamburger.addEventListener('click', () => {
+      const isOpen = mobileNav.classList.toggle('open');
+      hamburger.classList.toggle('open', isOpen);
+      hamburger.setAttribute('aria-expanded', String(isOpen));
+    });
+  </script>
+</body>
+</html>
